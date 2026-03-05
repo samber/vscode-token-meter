@@ -11,6 +11,10 @@ Count token in the selected code:
 
 ![Token Meter for a small section](./assets/screenshot-2.png)
 
+## 🤔 Why ?
+
+I was creating some Claude Code Skills. To avoid filling the context window, I needed to evaluate my skill size.
+
 ## 🎨 Features
 
 - Token count for the entire file or selected text
