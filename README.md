@@ -23,6 +23,25 @@ I was creating some Claude Code Skills. To avoid filling the context window, I n
 - File pattern filtering to control which files show token counts
 - Click the status bar item to quickly switch models
 
+## Install
+
+### Via marketplace
+
+- *VSCode*: https://marketplace.visualstudio.com/items?itemName=samber.vscode-token-meter
+- *Cursor*: https://open-vsx.org/extension/samber/vscode-token-meter
+
+### Via VSCode cli
+
+```bash
+code --install-extension samber.vscode-token-meter
+```
+
+### Via Cursor cli
+
+```bash
+cursor --install-extension samber.vscode-token-meter
+```
+
 ## ⚙️ Settings
 
 | Setting                   | Default   | Description                                                                                                                                                                                |
