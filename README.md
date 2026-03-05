@@ -56,7 +56,7 @@ Press **F5** in VS Code to launch the Extension Development Host.
 
 ## 👤 Contributors
 
-![Contributors](https://contrib.rocks/image?repo=samber/lo)
+![Contributors](https://contrib.rocks/image?repo=samber/vscode-token-meter)
 
 ## 💫 Show your support
 
