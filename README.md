@@ -49,6 +49,7 @@ Don't hesitate ;)
 ```bash
 npm install -g @vscode/vsce
 vsce package
+code --install-extension vscode-token-meter-*.vsix 
 ```
 
 Press **F5** in VS Code to launch the Extension Development Host.

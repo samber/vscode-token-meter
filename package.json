@@ -2,13 +2,14 @@
     "name": "vscode-token-meter",
     "displayName": "LLM Token Meter",
     "description": "Count tokens in the current file or selected text",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "samber",
     "author": {
         "name": "Samuel Berthe",
         "email": "hey@samuel-berthe.fr"
     },
     "license": "MIT",
+    "icon": "assets/logo.png",
     "repository": {
         "type": "git",
         "url": "https://github.com/samber/vscode-token-meter.git"
