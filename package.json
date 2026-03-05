@@ -1,0 +1,142 @@
+{
+    "name": "vscode-token-meter",
+    "displayName": "LLM Token Meter",
+    "description": "Count tokens in the current file or selected text",
+    "version": "0.1.0",
+    "publisher": "samber",
+    "author": {
+        "name": "Samuel Berthe",
+        "email": "hey@samuel-berthe.fr"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/samber/vscode-token-meter.git"
+    },
+    "bugs": {
+        "url": "https://github.com/samber/vscode-token-meter/issues"
+    },
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "keywords": [
+        "tokens",
+        "token counter",
+        "token meter",
+        "tiktoken",
+        "openai",
+        "gpt",
+        "llm",
+        "ai",
+        "tokenizer",
+        "token count",
+        "character count"
+    ],
+    "activationEvents": [
+        "onStartupFinished"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "tokenMeter.selectModel",
+                "title": "Token Meter: Select Model"
+            }
+        ],
+        "configuration": {
+            "title": "Token Meter",
+            "properties": {
+                "tokenMeter.model": {
+                    "type": "string",
+                    "default": "gpt-4o",
+                    "enum": [
+                        "gpt-4o",
+                        "gpt-4o-mini",
+                        "gpt-4-turbo",
+                        "gpt-4",
+                        "gpt-3.5-turbo",
+                        "text-embedding-3-small",
+                        "text-embedding-3-large",
+                        "text-embedding-ada-002"
+                    ],
+                    "description": "The model to use for token counting"
+                },
+                "tokenMeter.filePatterns": {
+                    "type": "array",
+                    "default": [
+                        "*.md",
+                        "*.txt",
+                        "*.py",
+                        "*.js",
+                        "*.jsx",
+                        "*.ts",
+                        "*.tsx",
+                        "*.json",
+                        "*.yaml",
+                        "*.yml",
+                        "*.toml",
+                        "*.xml",
+                        "*.html",
+                        "*.css",
+                        "*.scss",
+                        "*.less",
+                        "*.go",
+                        "*.rs",
+                        "*.java",
+                        "*.kt",
+                        "*.scala",
+                        "*.c",
+                        "*.cpp",
+                        "*.h",
+                        "*.hpp",
+                        "*.cs",
+                        "*.rb",
+                        "*.php",
+                        "*.swift",
+                        "*.m",
+                        "*.r",
+                        "*.R",
+                        "*.lua",
+                        "*.pl",
+                        "*.sh",
+                        "*.bash",
+                        "*.zsh",
+                        "*.fish",
+                        "*.sql",
+                        "*.graphql",
+                        "*.proto",
+                        "*.dart",
+                        "*.ex",
+                        "*.exs",
+                        "*.erl",
+                        "*.hs",
+                        "*.clj",
+                        "*.vue",
+                        "*.svelte",
+                        "*.tf",
+                        "*.dockerfile",
+                        "Dockerfile"
+                    ],
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Glob patterns for files to count tokens in. Use [\"*\"] to match all files."
+                }
+            }
+        }
+    },
+    "scripts": {
+        "build": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "lint": "eslint src",
+        "package": "vsce package"
+    },
+    "dependencies": {
+        "tiktoken": "^1.0.21"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.0",
+        "@types/vscode": "^1.85.0",
+        "typescript": "^5.3.0"
+    }
+}
