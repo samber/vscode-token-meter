@@ -1,17 +1,24 @@
-
 # Token Meter for VS Code
 
 A VS Code extension that counts tokens in the current file or selected text.
 
-Token count is displayed in the status bar and updates in real-time as you type or change selection.
+Token count is **displayed in the status bar** and updates in real-time as you type or change selection.
+
+<img alt="counter" src="https://github.com/user-attachments/assets/f5c98a4e-1d38-41d6-946d-52b21a3ad38d" />
+
+👇
 
 ![Token Meter in action](./assets/screenshot-1.png)
 
-Count token in the selected code:
+**Count tokens in the selected code:**
+
+<img alt="counter" src="https://github.com/user-attachments/assets/38d3cbda-24ff-461b-bc2c-27fd05724aff" />
+
+👇
 
 ![Token Meter for a small section](./assets/screenshot-2.png)
 
-## 🤔 Why ?
+## 🤔 Motivation
 
 I was creating some Claude Code Skills. To avoid filling the context window, I needed to evaluate my skill size.
 
@@ -23,7 +30,7 @@ I was creating some Claude Code Skills. To avoid filling the context window, I n
 - File pattern filtering to control which files show token counts
 - Click the status bar item to quickly switch models
 
-## Install
+## 🚀 Install
 
 ### Via marketplace
 
